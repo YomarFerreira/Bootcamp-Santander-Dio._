@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+  <div style="display: flex; width:50%">
+    <div id="login-container" style="display:flex; flex-direction:column; justify-content:space-between; width:30%; height:100px;">
+      <input id="login" placeholder="Login" onchange="preencherLogin(event)" style="font-size:11px; font-family:Helvetica, Arial, sans-serif;">
+      <input id="senha" placeholder="Password" type="password" onchange="preencherSenha(event)" style="font-size:11px; font-family:Helvetica, Arial, sans-serif;">
+      <input id="api-key" placeholder="Api Key" onchange="preencherApi()" style="font-size:11px; font-family:Helvetica, Arial, sans-serif;">
+      <button id="login-button" disabled>Login</button>
+    </div>
+    <div id="search-container-all" style="margin-left:15px; width:70%; display:flex; align-items:flex-start; justify-content: flex-start;">
+      <input id="search" placeholder="Enter your search..." style="width:70%; font-size:11px; font-family:Helvetica, Arial, sans-serif;">
+      <button id="search-button" style="margin-left: 10px;">Search</button>
+    </div>
+  </div>
+  <hr>
+  <div id="search-container" style="width:50%;">
+    <p id="p-titlefilm" style="margin-top:10px; margin-bottom:5px; font-weight: bold; font-size:16px; font-family: Helvetica, Arial, sans-serif; color: rgb(73, 73, 118);" hidden>List of movies matching the search</p>
+    </div>
+</body>
+</html>
